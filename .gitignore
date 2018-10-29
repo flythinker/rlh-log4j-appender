@@ -1,0 +1,4 @@
+*.iml
+.idea/*
+target/*
+src/test/resources/log4j.properties
