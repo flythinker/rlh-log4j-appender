@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github.flythinker.rlh</groupId>
     <artifactId>log4j-appender</artifactId>
-    <version>0.1.1-SNAPSHOT</version>
+    <version>0.1.4-SNAPSHOT</version>
     <!--<version>0.2.2-SNAPSHOT</version>-->
 	<inceptionYear>2018</inceptionYear>
 
@@ -20,14 +18,15 @@
 
   <scm>
     <connection>
-        scm:git:https://github.com/flythinker/rlh-log4j-appender.git
+        scm:git:git@github.com:flythinker/rlh-log4j-appender.git
     </connection>
     <developerConnection>
-      scm:git:https://github.com/flythinker/rlh-log4j-appender.git
+      scm:git:git@github.com:flythinker/rlh-log4j-appender.git
     </developerConnection>
     <url>
         https://github.com/flythinker/rlh-log4j-appender
     </url>
+    <tag>v0.1.2</tag>
   </scm>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -63,6 +62,11 @@
     <build>
         <!--<finalName>rlh-logback-appender</finalName>-->
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
